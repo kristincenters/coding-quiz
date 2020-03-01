@@ -31,33 +31,33 @@
 				<p>
 					For this challenge, you will have one minute to answer 5 JavaScript coding questions. Five seconds will be
 					deducted for each wrong answer. 
-				</p>
+        </p>
+        <button type="button" class="btn btn-info btn-block" id="startBtn">Start Quiz</button>
 				<div class="container">
 					<header>
 						<div class="row">
 							<div class="col">
-								<h3>Timer</h3>
+                <h3 class="time"></h3>
+                <div id="timer">time</div>
 							</div>
-							<div class="col-md-auto">
-                <button type="button" class="btn btn-info btn-block" id="start">Start Quiz</button>
+							<div class="col-md-auto" id="quizQuestions">
+                <ul class="list-group" id='questions'>Which statements are true?
                 <br>
-								<ul class="list-group" id="quizQuestions">Which statements are true?
-                <br>
-									<li class="list-group-item active" onclick="validateAnswer()">
-										A: JavaScript can be embedded within HTML
+									<li class="list-group-item active" id='' onclick="validateAnswer()">
+										JavaScript can be embedded within HTML
 									</li>
 									<li class="list-group-item" onclick="validateAnswer()">
-										B: JavaScript is different from Java
+										JavaScript is different from Java
 									</li>
 									<li class="list-group-item" onclick="validateAnswer()">
-										C: JavaScript can be viewed in your browser window
+										JavaScript can be viewed in your browser window
 									</li>
                   <li class="list-group-item" onclick="validateAnswer()">
-										D: JavaScript can be viewed in your browser window
+										JavaScript can be viewed in your browser window
 									</li>
 								</ul>
 							</div>
-							<div class="col">
+							<div class="col" id='topScores'>
 								<h3>Top Scores</h3>
 							</div>
 						</div>

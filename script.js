@@ -1,57 +1,67 @@
+window.onload = startButton;
 //activate button
-var startBtn = document.querySelector('start');
-start.addEventListener('click', quizQuestions);
+function startButton() {
+	alert('this button works');
+}
+var startBtnElement = document.getElementById('startBtn');
+startBtnElement.addEventListener('click', startButton, false);
 
-let timer;
+//const questions = document.querySelector('quizQuestions');
+//const timer = document.querySelector('timer');
 
-function startQuiz() {
-	timer = setInterval(displayCounter, 1000);
-	//function displayQuestions();
+var timeElement = document.querySelector('.time');
+var timerElement = document.getElementById('timer');
+
+function timeClock() {
+	var timer = 20;
+	setInterval(function() {
+		if (timer >= 1) {
+			console.log('timer');
+			timer--;
+
+			var counter = document.getElementById('timer');
+
+			timer.innerContent = counter + 'Time Left';
+		}
+	}, 2000);
 }
 
+function timeAlert() {
+	timeElement.textContent = 'Time Over';
+}
+
+/*
+function revealQuiz() {
+	event.preventDefault();
+	//timer = setInterval(displayCounter, 1000);
+	//randomQuestions = quizQuestions.shadowRoot(() => Math.random( - .5))
+}
+*/
+/*questions.addEventListener(
+	'click',
+	function() {
+	console.log('this button works');
+	},
+	false
+);
+*/
+//function displayQuestions();
+/*
 var quizQuestions = [
 	{
-		question: 'Question1?',
-		multipleChoice: [
-			{
-				id: 'answer-a',
-				answer: 'a'
-			},
-			{
-				id: 'answer-b',
-				answer: 'b'
-			},
-			{
-				id: 'answer-c',
-				answer: 'c'
-			},
-			{
-				id: 'answer-d',
-				answer: 'd'
-			}
-		],
-		correct_answer: 'b'
+		question: 'Which statements are true?',
+		answerA: '<JavaScript can be embedded within HTML>',
+		answerB: '<JavaScript is different from Java>',
+		answerC: '<JavaScript can be viewed in your browser window>',
+		answerD: '<All of the Above>',
+		correctAnswer: '3'
 	},
 	{
-		question: 'question2?',
-		multipleChoice: [
-			{
-				id: 'a',
-				answer: 'a'
-			},
-			{
-				id: 'b',
-				answer: 'b'
-			},
-			{
-				id: 'c',
-				answer: 'b'
-			},
-			{
-				id: 'd',
-				answer: 'b'
-			}
-		],
-		correct_answer: 'b'
+		question: 'Name a JavaScript Library',
+		answerA: '<React>',
+		answerB: '<Bootstrap>',
+		answerC: '<Sass>',
+		answerD: '<Ruby',
+		correctAnswer: '0'
 	}
-];
+];*/
