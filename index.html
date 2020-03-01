@@ -37,25 +37,24 @@
 					<header>
 						<div class="row">
 							<div class="col">
-                <h3 class="time"></h3>
-                <div id="timer">time</div>
+                <h3 class="time">Time Remaining</h3>
+                <div id="timer"></div>
 							</div>
-							<div class="col-md-auto" id="quizQuestions">
-                <ul class="list-group" id='questions'>Which statements are true?
-                <br>
-									<li class="list-group-item active" id='' onclick="validateAnswer()">
-										JavaScript can be embedded within HTML
-									</li>
-									<li class="list-group-item" onclick="validateAnswer()">
-										JavaScript is different from Java
-									</li>
-									<li class="list-group-item" onclick="validateAnswer()">
-										JavaScript can be viewed in your browser window
-									</li>
-                  <li class="list-group-item" onclick="validateAnswer()">
-										JavaScript can be viewed in your browser window
-									</li>
-								</ul>
+							<div class="col-md-auto">
+              <div class= id="quizQuestions">Question?</div>
+                <div class = "btn-group-vertical"</div>
+									<button type="button" class="btn btn-secondary" onclick="validateAnswer()">
+										answerA
+                  </button>
+									<button type="button" class="btn btn-secondary" onclick="validateAnswer()">
+										answerB
+									</button>
+									<button type="button" class="btn btn-secondary" onclick="validateAnswer()">
+										answerC
+									</button>
+                  <button type="button" class="btn btn-secondary"onclick="validateAnswer()">
+										answerD
+									</button>
 							</div>
 							<div class="col" id='topScores'>
 								<h3>Top Scores</h3>

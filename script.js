@@ -1,5 +1,5 @@
+//load start button function
 window.onload = startButton;
-//activate button
 function startButton() {
 	alert('this button works');
 }
@@ -9,44 +9,21 @@ startBtnElement.addEventListener('click', startButton, false);
 //const questions = document.querySelector('quizQuestions');
 //const timer = document.querySelector('timer');
 
-var timeElement = document.querySelector('.time');
-var timerElement = document.getElementById('timer');
+var counter = 20;
+setInterval(function() {
+	if (counter >= 1) {
+		counter--;
+		var timer = document.getElementById('timer');
+		timer.innerText = 'Seconds Remaining:' + counter;
+	}
+}, 2000);
 
-function timeClock() {
-	var timer = 20;
-	setInterval(function() {
-		if (timer >= 1) {
-			console.log('timer');
-			timer--;
-
-			var counter = document.getElementById('timer');
-
-			timer.innerContent = counter + 'Time Left';
-		}
-	}, 2000);
-}
-
-function timeAlert() {
-	timeElement.textContent = 'Time Over';
-}
-
-/*
 function revealQuiz() {
 	event.preventDefault();
 	//timer = setInterval(displayCounter, 1000);
 	//randomQuestions = quizQuestions.shadowRoot(() => Math.random( - .5))
 }
-*/
-/*questions.addEventListener(
-	'click',
-	function() {
-	console.log('this button works');
-	},
-	false
-);
-*/
-//function displayQuestions();
-/*
+
 var quizQuestions = [
 	{
 		question: 'Which statements are true?',
@@ -64,4 +41,4 @@ var quizQuestions = [
 		answerD: '<Ruby',
 		correctAnswer: '0'
 	}
-];*/
+];
