@@ -29,34 +29,36 @@
 			<div class="container-fluid" style="background-color: gainsboro">
 				<h1>Ready. Set. Go.</h1>
 				<p>
-					You will have one minute to answer 5 questions on this JavaScript coding quiz. Five seconds will be
-					deducted for each wrong answer.
+					For this challenge, you will have one minute to answer 5 JavaScript coding questions. Five seconds will be
+					deducted for each wrong answer. 
 				</p>
 				<div class="container">
 					<header>
 						<div class="row">
 							<div class="col">
-								<p>Timer</p>
-								<button type="button" class="btn btn-info">Start</button>
+								<h3>Timer</h3>
 							</div>
 							<div class="col-md-auto">
-								Questions
-								<p>Which statements are true?</p>
-								<ul class="list-group">
-									<li class="list-group-item active">
+                <button type="button" class="btn btn-info btn-block" id="start">Start Quiz</button>
+                <br>
+								<ul class="list-group" id="quizQuestions">Which statements are true?
+                <br>
+									<li class="list-group-item active" onclick="validateAnswer()">
 										A: JavaScript can be embedded within HTML
 									</li>
-									<li class="list-group-item">
+									<li class="list-group-item" onclick="validateAnswer()">
 										B: JavaScript is different from Java
 									</li>
-									<li class="list-group-item">
+									<li class="list-group-item" onclick="validateAnswer()">
 										C: JavaScript can be viewed in your browser window
 									</li>
-									<li class="list-group-item">D: All of the above</li>
+                  <li class="list-group-item" onclick="validateAnswer()">
+										D: JavaScript can be viewed in your browser window
+									</li>
 								</ul>
 							</div>
 							<div class="col">
-								<p>Top Scores</p>
+								<h3>Top Scores</h3>
 							</div>
 						</div>
 				</div>
