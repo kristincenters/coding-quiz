@@ -18,50 +18,37 @@
 			href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
 			rel="stylesheet"
 		/>
-		<script
-			src="https://kit.fontawesome.com/0ded37e0fb.js"
-			crossorigin="anonymous"
-		></script>
 		<title>JavaScript Coding Quiz</title>
 	</head>
 	<main>
 		<body>
-			<div class="container-fluid" style="background-color: gainsboro">
+			<div class="container" align="center">
 				<h1>Ready. Set. Go.</h1>
 				<p>
-					For this challenge, you will have one minute to answer 5 JavaScript coding questions. Five seconds will be
-					deducted for each wrong answer. 
-        </p>
-        <button type="button" class="btn btn-info btn-block" id="startBtn">Start Quiz</button>
-				<div class="container">
-					<header>
-						<div class="row">
-							<div class="col">
-                <h3 class="time">Time Remaining</h3>
-                <div id="timer"></div>
-							</div>
-							<div class="col-md-auto">
-              <div class= id="quizQuestions">Question?</div>
-                <div class = "btn-group-vertical"</div>
-									<button type="button" class="btn btn-secondary" onclick="validateAnswer()">
-										answerA
-                  </button>
-									<button type="button" class="btn btn-secondary" onclick="validateAnswer()">
-										answerB
-									</button>
-									<button type="button" class="btn btn-secondary" onclick="validateAnswer()">
-										answerC
-									</button>
-                  <button type="button" class="btn btn-secondary"onclick="validateAnswer()">
-										answerD
-									</button>
-							</div>
-							<div class="col" id='topScores'>
-								<h3>Top Scores</h3>
-							</div>
-						</div>
+					For this challenge, you will have one minute to answer 5 JavaScript
+					coding questions. Five seconds will be deducted for each wrong answer.
+				</p>
+				<button type="button" class="btn btn-info" id="startBtn">
+					Start Quiz
+				</button>
+
+				<div id="timer">Remaining Time:<span id="countDown"></span></div>
+				<div id="questions" class="hide"></div>
+				<div id="answers" class="hide"></div>
+				<div id="highscore" class="hide"></div>
+				<div>
+					<h2>"Done!"</h2>
+					<p>Your final score is <span id="finalscore"></span></p>
+					<p>Initials:</p>
+					<button type="button" class="btn btn-outline-secondary" id="goback">
+						Go Back
+					</button>
+					<button type="button" class="btn btn-outline-secondary" id="clear">
+						Clear Scores
+					</button>
 				</div>
 			</div>
+			<script src="questions.js"></script>
 			<script src="script.js"></script>
 		</body>
 	</main>
