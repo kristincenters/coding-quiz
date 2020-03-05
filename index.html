@@ -20,36 +20,21 @@
 		/>
 		<title>JavaScript Coding Quiz</title>
 	</head>
-	<main>
 		<body>
-			<div class="container" align="center">
-				<h1>Ready. Set. Go.</h1>
-				<p>
-					For this challenge, you will have one minute to answer 5 JavaScript
-					coding questions. Five seconds will be deducted for each wrong answer.
-				</p>
+			<div class="container" align="center" id="quiz">
+				<h1>Kristin's Fast Facts</h1>
 				<button type="button" class="btn btn-info" id="startBtn">
 					Start Quiz
 				</button>
-
-				<div id="timer">Remaining Time:<span id="countDown"></span></div>
-				<div id="questions" class="hide"></div>
-				<div id="answers" class="hide"></div>
-				<div id="highscore" class="hide"></div>
-				<div>
-					<h2>"Done!"</h2>
-					<p>Your final score is <span id="finalscore"></span></p>
-					<p>Initials:</p>
-					<button type="button" class="btn btn-outline-secondary" id="goback">
-						Go Back
-					</button>
-					<button type="button" class="btn btn-outline-secondary" id="clear">
-						Clear Scores
-					</button>
-				</div>
+				<div id="counter"></div>
+				<section id="renderQuiz" align="center">
+					<ul></ul>
+				<div id="renderQuestion"></div>
+				</div id="renderOptions"></div></section>
+				<div id="score"></div>
 			</div>
-			<script src="questions.js"></script>
-			<script src="script.js"></script>
+
+			<script src="script.js" async="false"></script>
 		</body>
-	</main>
+		
 </html>
