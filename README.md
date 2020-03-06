@@ -4,11 +4,11 @@
 
 ## Technologies
 
-HTML, CSS, Bootstrap, JavaScript API
+HTML, CSS, Bootstrap, JavaScript
 
 ## Description
 
-This short multiple-choice code quiz features key questions to test your knowledge on JavaScript.Wrong answers will negatively impact the time clock.
+This short multiple-choice code quiz features key questions about me.
 
 ## Contact
 
